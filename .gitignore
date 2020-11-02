@@ -23,4 +23,5 @@
 # egg file
 **egg-info
 
-
+# ignore downloaded EDGAR data
+**data
