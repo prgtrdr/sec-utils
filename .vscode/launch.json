@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Edgar Download",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--output_dir=./sec-filings-downloaded",
+                "--num_workers=-1",
+                "--start_year=2016",
+                "--end_year=2017",
+                "--quarters", "1", "2", "3", "4",
+                "--cik_path=./sec-filings-downloaded/market_cap_GT_1B.csv",
+                "--form_types", "10-K", "10-Q"
+            ]
+        }
+
+    ]
+}

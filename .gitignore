@@ -25,3 +25,5 @@
 
 # ignore downloaded EDGAR data
 **data
+**sec-filings-downloaded
+**sec-filings-index
